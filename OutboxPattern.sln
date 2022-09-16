@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern", "OutboxPattern\OutboxPattern.csproj", "{FD9640DF-A1EF-418F-B03E-0D312F6CC806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD9640DF-A1EF-418F-B03E-0D312F6CC806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9640DF-A1EF-418F-B03E-0D312F6CC806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9640DF-A1EF-418F-B03E-0D312F6CC806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9640DF-A1EF-418F-B03E-0D312F6CC806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C374F4A-4FF6-450B-9ECA-88D57CE07420}
+	EndGlobalSection
+EndGlobal
