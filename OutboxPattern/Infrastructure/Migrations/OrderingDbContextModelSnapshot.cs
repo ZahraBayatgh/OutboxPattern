@@ -56,6 +56,9 @@ namespace OutboxPattern.Infrastructure.Migrations
                     b.Property<DateTime>("OccuredOnUtc")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("ProcessedOnUtc")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

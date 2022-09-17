@@ -14,7 +14,7 @@ namespace OutboxPattern.Domain
 
             var orderStartedDomainEvent = new OrderStartedDomainEvent(customerId, adderss, orderStatus);
 
-            this.AddDomainEvent(orderStartedDomainEvent);
+            AddDomainEvent(orderStartedDomainEvent);
         }
 
         public Guid CustomerId { get; set; }

@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OutboxPattern.Infrastructure;
 using MediatR;
 using OutboxPattern.Infrastructure.Interceptors;
+using OutboxPattern.Infrastructure.BackgroundServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ builder.Services.AddDbContext<OrderingDbContext>((sp, optionsBuilder) =>
 }
 ) ;
 builder.Services.AddMediatR(typeof(Program));
+builder.Services.AddHostedService<ProccessOutboxMessageBackgroundService>();
 
 var app = builder.Build();
 

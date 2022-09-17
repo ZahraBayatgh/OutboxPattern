@@ -7,7 +7,7 @@ namespace OutboxPattern.Application.DomainEventHandlers.OrderStartedEvent
     {
         public Task Handle(OrderStartedDomainEvent notification, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
     }
 }

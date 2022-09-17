@@ -29,6 +29,7 @@ namespace OutboxPattern.Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     OccuredOnUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ProcessedOnUtc = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },

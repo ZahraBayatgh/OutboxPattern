@@ -12,7 +12,7 @@ using OutboxPattern.Infrastructure;
 namespace OutboxPattern.Infrastructure.Migrations
 {
     [DbContext(typeof(OrderingDbContext))]
-    [Migration("20220916174710_Init")]
+    [Migration("20220916182316_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,6 +56,9 @@ namespace OutboxPattern.Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OccuredOnUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ProcessedOnUtc")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Type")
